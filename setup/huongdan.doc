@@ -1,0 +1,59 @@
+CÁC BƯỚC CÀI ĐẶT WEBSITE 
+Bước 1: Tải mã nguồn từ GitHub
+
+Clone hoặc tải project từ GitHub về máy
+
+Giải nén (nếu tải file .zip)
+
+Bước 2: Cài đặt và khởi động XAMPP
+
+Cài đặt phần mềm XAMPP
+
+Mở XAMPP Control Panel
+
+Bật Apache và MySQL
+
+Bước 3: Copy mã nguồn vào XAMPP
+
+Vào thư mục:
+
+xampp/htdocs/
+
+
+Copy toàn bộ thư mục src vào htdocs
+Ví dụ:
+
+xampp/htdocs/banhkem/
+
+Bước 4: Import cơ sở dữ liệu
+
+Mở trình duyệt truy cập:
+
+http://localhost/phpmyadmin
+
+
+Tạo database mới (ví dụ: banhkem)
+
+Chọn database → Import
+
+Chọn file .sql trong thư mục project
+
+Nhấn Go để hoàn tất
+
+Bước 5: Chạy website
+
+Mở trình duyệt và truy cập:
+
+http://localhost/banhkem/page
+
+
+Website hoạt động bình thường
+
+Bước 6: Đăng nhập trang quản trị 
+
+Truy cập:
+
+http://localhost/banhkem/admin/dangnhap.php
+
+
+Tài khoản admin được cấu hình trong cơ sở dữ liệu
