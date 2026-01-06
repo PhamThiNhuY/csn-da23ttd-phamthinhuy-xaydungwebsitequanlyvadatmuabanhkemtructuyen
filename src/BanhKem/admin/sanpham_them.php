@@ -1,6 +1,9 @@
-<?php 
-// Header giao diện admin (chứa html, head, body, navbar)
-include 'header.php'; 
+<?php
+include '../config/connect.php';
+include 'header.php';
+
+// Lấy dữ liệu danh mục phục vụ chức năng thêm/sửa sản phẩm
+$categories = mysqli_query($mysqli, "SELECT * FROM danh_muc");
 ?>
 
 <!-- Nội dung trang thêm sản phẩm -->
@@ -59,11 +62,9 @@ include 'header.php';
                         <div class="mb-3">
                             <label class="form-label fw-bold">Danh mục</label>
                             <select name="MaDM" class="form-select">
-                                <option value="1">Bánh Kem Sinh Nhật Hoa</option>
-                                <option value="2">Bánh Bông Lan Trứng Muối</option>
-                                <option value="3">Bánh Kem Trái Cây Tươi</option>
-                                <option value="4">Bánh Bento</option>
-                                <option value="5">Bánh Theo Sự Kiện</option>
+                                <?php while ($cat = mysqli_fetch_assoc($categories)): ?>
+                                <option value="<?=$cat['MaDM']?>"><?=$cat['TenDM']?></option>
+                            <?php endwhile; ?>
                             </select>
                         </div>
 
