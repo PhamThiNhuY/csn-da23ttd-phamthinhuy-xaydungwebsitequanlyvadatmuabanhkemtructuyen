@@ -9,6 +9,9 @@ $sp = mysqli_fetch_assoc(
     mysqli_query($mysqli, "SELECT * FROM san_pham WHERE MaBanh = $id")
 );
 
+// Lấy dữ liệu danh mục phục vụ chức năng thêm/sửa sản phẩm
+$categories = mysqli_query($mysqli, "SELECT * FROM danh_muc");
+
 // Xử lý khi submit form
 if (isset($_POST['sua'])) {
     $ten  = $_POST['ten'];
@@ -97,21 +100,9 @@ if (isset($_POST['sua'])) {
                         <div class="mb-3">
                             <label class="form-label fw-bold">Danh mục</label>
                             <select name="madm" class="form-select">
-                                <option value="1" <?= $sp['MaDM']==1?'selected':'' ?>>
-                                    Bánh Kem Sinh Nhật Hoa
-                                </option>
-                                <option value="2" <?= $sp['MaDM']==2?'selected':'' ?>>
-                                    Bánh Bông Lan Trứng Muối
-                                </option>
-                                <option value="3" <?= $sp['MaDM']==3?'selected':'' ?>>
-                                    Bánh Kem Trái Cây Tươi
-                                </option>
-                                <option value="4" <?= $sp['MaDM']==4?'selected':'' ?>>
-                                    Bánh Bento
-                                </option>
-                                <option value="5" <?= $sp['MaDM']==5?'selected':'' ?>>
-                                    Bánh Theo Sự Kiện
-                                </option>
+                                <?php while ($cat = mysqli_fetch_assoc($categories)): ?>
+                                    <option value="<?=$cat['MaDM']?>" <?=($sp['MaDM']==$cat['MaDM']?'selected':'')?>><?=$cat['TenDM']?></option>
+                                <?php endwhile; ?>
                             </select>
                         </div>
 
