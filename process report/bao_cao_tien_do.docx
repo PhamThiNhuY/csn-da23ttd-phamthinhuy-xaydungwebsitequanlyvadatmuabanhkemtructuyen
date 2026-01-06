@@ -1,0 +1,95 @@
+ BÁO CÁO TIẾN ĐỘ THỰC HIỆN ĐỒ ÁN CƠ SỞ NGÀNH
+
+Tên đề tài: Xây dựng website quản lý và đặt mua bánh kem trực tuyến
+Sinh viên thực hiện: Phạm Thị Như Ý
+MSSV: 110123205 – Lớp: DA23TTD
+Thời gian thực hiện: 17/11/2025 – 04/01/2026
+Công nghệ sử dụng: PHP, MySQL, HTML, CSS, Bootstrap
+
+1. Mục tiêu của đồ án
+
+Xây dựng một website cho phép:
+
+Hiển thị danh sách và chi tiết sản phẩm bánh kem
+
+Hỗ trợ đặt mua bánh trực tuyến
+
+Cho phép admin quản lý sản phẩm (thêm, sửa, xóa)
+
+Giao diện thân thiện, dễ sử dụng, hiển thị tốt trên nhiều thiết bị
+
+2. Tiến độ thực hiện hiện tại
+ Giai đoạn 1: Khảo sát và phân tích (Hoàn thành)
+
+Tìm hiểu các website bán bánh kem tương tự
+
+Xác định các chức năng chính của hệ thống
+
+Xác định đối tượng sử dụng và phạm vi đề tài
+
+Hoàn thành nội dung Chương 1 và Chương 2 trong báo cáo
+
+ Kết quả:
+Có tài liệu mô tả bài toán và yêu cầu hệ thống rõ ràng.
+
+ Giai đoạn 2: Thiết kế hệ thống (Hoàn thành)
+
+Thiết kế giao diện cơ bản cho website (trang chủ, danh mục, chi tiết sản phẩm)
+
+Thiết kế cấu trúc cơ sở dữ liệu MySQL
+
+Xây dựng sơ đồ tổng quan hệ thống
+
+ Kết quả:
+Có bản thiết kế giao diện và mô hình dữ liệu phục vụ cho quá trình lập trình.
+
+ Giai đoạn 3: Hiện thực hóa hệ thống (Đang thực hiện)
+
+Tạo cơ sở dữ liệu và các bảng cần thiết
+
+Xây dựng giao diện website bằng HTML, CSS, Bootstrap
+
+Hiện thực các chức năng:
+
+Hiển thị danh sách sản phẩm
+
+Xem chi tiết sản phẩm
+
+Chức năng đăng nhập admin
+
+Quản lý sản phẩm (thêm, sửa, xóa)
+
+ Kết quả hiện tại:
+Website chạy được trên môi trường local (XAMPP), các chức năng cơ bản hoạt động ổn định.
+
+ Giai đoạn 4: Hoàn thiện và kiểm thử (Sắp thực hiện)
+
+Hoàn thiện giao diện người dùng
+
+Kiểm tra và sửa lỗi phát sinh
+
+Tối ưu hiển thị trên nhiều thiết bị
+
+Hoàn thiện báo cáo và tài liệu trình bày
+
+Đưa toàn bộ mã nguồn lên GitHub
+
+3. Kết quả đạt được đến thời điểm hiện tại
+
+Website bán bánh kem hoạt động với dữ liệu thử nghiệm
+
+Admin có thể quản lý sản phẩm
+
+Giao diện rõ ràng, dễ sử dụng
+
+Mã nguồn được tổ chức theo cấu trúc rõ ràng và lưu trữ trên GitHub
+
+4. Hướng phát triển tiếp theo
+
+Bổ sung chức năng quản lý đơn hàng
+
+Cải thiện giao diện người dùng
+
+Nâng cao tính bảo mật cho trang quản trị
+
+Hoàn thiện báo cáo và slide thuyết trình bảo vệ đồ án
