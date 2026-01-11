@@ -23,7 +23,7 @@ $dm = mysqli_fetch_assoc(mysqli_query(
 
   <!-- CHÀO ADMIN -->
   <div class="alert alert-success shadow-sm">
-    👋 Xin chào <strong>Admin</strong>, chúc bạn một ngày làm việc hiệu quả!
+    Xin chào <strong>Admin</strong>, chúc bạn một ngày làm việc hiệu quả!
   </div>
 
   <div class="row g-4">
@@ -32,7 +32,9 @@ $dm = mysqli_fetch_assoc(mysqli_query(
     <div class="col-md-4">
       <div class="card border-0 shadow-lg h-100">
         <div class="card-body text-center p-4">
-          <div class="fs-1 mb-2">🍰</div>
+          <div class="fs-1 mb-2 text-success">
+            <i class="bi bi-cake2-fill"></i>
+          </div>
 
           <h5 class="fw-bold">
             Sản phẩm
@@ -55,7 +57,9 @@ $dm = mysqli_fetch_assoc(mysqli_query(
     <div class="col-md-4">
       <div class="card border-0 shadow-lg h-100">
         <div class="card-body text-center p-4">
-          <div class="fs-1 mb-2">📦</div>
+          <div class="fs-1 mb-2 text-success">
+            <i class="bi bi-box-seam-fill"></i>
+          </div>
 
           <h5 class="fw-bold">
             Đơn hàng
@@ -78,7 +82,9 @@ $dm = mysqli_fetch_assoc(mysqli_query(
     <div class="col-md-4">
       <div class="card border-0 shadow-lg h-100">
         <div class="card-body text-center p-4">
-          <div class="fs-1 mb-2">📂</div>
+          <div class="fs-1 mb-2 text-success">
+            <i class="bi bi-folder-fill"></i>
+          </div>
 
           <h5 class="fw-bold">
             Danh mục
