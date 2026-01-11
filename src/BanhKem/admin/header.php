@@ -20,6 +20,10 @@ if (!isset($_SESSION['admin'])) {
     <!-- CSS admin -->
     <link rel="stylesheet" href="assets/admin.css">
     <link rel="stylesheet" href="style2.css">
+
+     <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 <body>
 
