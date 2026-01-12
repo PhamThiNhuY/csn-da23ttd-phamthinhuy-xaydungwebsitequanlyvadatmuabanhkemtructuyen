@@ -13,6 +13,9 @@ session_start();
   <link rel="stylesheet" href="../style/style.css">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/f542258c79.js" crossorigin="anonymous"></script>
+   <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -59,7 +62,11 @@ session_start();
 
       <td><?= number_format($thanhtien) ?> ₫</td>
       <td>
-        <a href="xoagiohang.php?id=<?= $id ?>" class="btn btn-sm btn-danger">X</a>
+          <a href="xoagiohang.php?id=<?= $id ?>"
+            class="btn btn-sm btn-danger"
+            title="Xoá sản phẩm">
+              <i class="bi bi-trash"></i>
+          </a>
       </td>
     </tr>
     <?php endforeach; ?>

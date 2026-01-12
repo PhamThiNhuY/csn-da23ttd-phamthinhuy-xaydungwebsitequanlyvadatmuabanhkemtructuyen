@@ -9,7 +9,10 @@ $result = mysqli_query($mysqli, $sql);
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h4> Quản lý sản phẩm</h4>
-        <a href="sanpham_them.php" class="btn btn-success">➕ Thêm sản phẩm</a>
+        <a href="sanpham_them.php" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Thêm sản phẩm
+        </a>
+
     </div>
 
     <table class="table table-bordered table-hover align-middle text-center">
@@ -32,11 +35,19 @@ $result = mysqli_query($mysqli, $sql);
                         <img src="../anhbanhkem/<?= $row['DuongDanAnh'] ?>" width="70">
                     </td>
                     <td>
-                        <a href="sanpham_sua.php?id=<?= $row['MaBanh'] ?>" class="btn btn-warning btn-sm">✏️</a>
+                        <a href="sanpham_sua.php?id=<?= $row['MaBanh'] ?>" 
+                        class="btn btn-warning btn-sm">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+
                         <a href="sanpham_xoa.php?id=<?= $row['MaBanh'] ?>"
-                           onclick="return confirm('Bạn đã chắc chắn mún xoá sản phẩm này?')"
-                           class="btn btn-danger btn-sm">🗑</a>
+                        onclick="return confirm('Bạn đã chắc chắn mún xoá sản phẩm này?')"
+                        class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i>
+                        </a>
                     </td>
+
+                    
                 </tr>
             <?php } ?>
         </tbody>

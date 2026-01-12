@@ -43,7 +43,7 @@ if (isset($_POST['capnhat'])) {
 
             <div class="card shadow-lg rounded-4">
                 <div class="card-header text-center">
-                    <h4 class="mb-0">✏️ Sửa danh mục</h4>
+                    <h4 class="mb-0">Sửa danh mục</h4>
                 </div>
 
                 <div class="card-body p-4">

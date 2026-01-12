@@ -30,7 +30,7 @@ if (isset($_POST['them'])) {
 
             <div class="card shadow-lg rounded-4">
                 <div class="card-header text-center">
-                    <h4 class="mb-0">➕ Thêm danh mục</h4>
+                    <h4 class="mb-0">Thêm danh mục mới</h4>
                 </div>
 
                 <div class="card-body p-4">

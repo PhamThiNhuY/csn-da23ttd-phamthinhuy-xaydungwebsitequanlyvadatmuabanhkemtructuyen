@@ -7,10 +7,14 @@ $sql = "SELECT * FROM danh_muc ORDER BY MaDM DESC";
 $result = mysqli_query($mysqli, $sql);
 ?>
 
+
+
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h4> Quản lý danh mục</h4>
-        <a href="danhmuc_them.php" class="btn btn-success">➕ Thêm danh mục</a>
+        <a href="danhmuc_them.php" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Thêm danh mục
+        </a>
     </div>
 
     <table class="table table-bordered table-hover align-middle text-center">
@@ -30,9 +34,19 @@ $result = mysqli_query($mysqli, $sql);
                         <td><?= $row['MaDM'] ?></td>
                          <!-- Tên danh mục (chống XSS) -->
                         <td><?= htmlspecialchars($row['TenDM'], ENT_QUOTES) ?></td>
-                        <td>
-                            <a href="danhmuc_sua.php?id=<?= $row['MaDM'] ?>" class="btn btn-warning btn-sm">✏️</a>
-                            <a href="danhmuc_xoa.php?id=<?= $row['MaDM'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa danh mục này?')">🗑</a>
+                       <td>
+                            <a href="danhmuc_sua.php?id=<?= $row['MaDM'] ?>"
+                                class="btn btn-warning btn-sm"
+                                title="Sửa danh mục">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+
+                            <a href="danhmuc_xoa.php?id=<?= $row['MaDM'] ?>"
+                                class="btn btn-danger btn-sm"
+                                title="Xoá danh mục"
+                                onclick="return confirm('Bạn có chắc muốn xoá danh mục này?')">
+                                <i class="bi bi-trash"></i>
+                            </a>
                         </td>
                     </tr>
                 <?php endwhile; ?>
